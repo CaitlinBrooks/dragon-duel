@@ -14,7 +14,7 @@ export default class DuelService {
   getDragons(draw) {
     duelApi.get('dragons')
       .then(res => {
-        let dragons = res.data.data.map(rawDragon => {
+        let dragons = res.data.map(rawDragon => {
           return new Dragon(rawDragon)
         })
         draw(dragons)
@@ -35,7 +35,7 @@ export default class DuelService {
   //     })
   // }
 
-  getChampion(draw) {
+  getChampions(draw) {
     duelApi.get('champions')
       .then(res => {
         let champions = res.data.data.map(rawChampion => {
