@@ -3,7 +3,7 @@ export default class Dragon {
     this.id = reqData.id
     this.name = reqData.name
     this.imgUrl = reqData.imgUrl
-    this.maxHP = reqData.maxHP
-    this.currentHP = reqData.currentHP
+    this.maxHp = reqData.maxHP
+    this.currentHp = reqData.currentHP
   }
 }
