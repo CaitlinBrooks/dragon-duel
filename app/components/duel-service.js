@@ -38,7 +38,7 @@ export default class DuelService {
   getChampions(draw) {
     duelApi.get('champions')
       .then(res => {
-        let champions = res.data.data.map(rawChampion => {
+        let champions = res.data.map(rawChampion => {
           return new Champion(rawChampion)
         })
         draw(champions)

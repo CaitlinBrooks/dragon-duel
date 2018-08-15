@@ -7,7 +7,6 @@ function drawDragons(dragons) {
   for (let i = 0; i < dragons.length; i++) {
     const dragon = dragons[i];
     template += `
-    <p>${dragon.id}</p>
     <p>${dragon.name}</p>
     <img src="${dragon.imgUrl}" alt="dragon photo">
     <p>${dragon.maxHp}</p>
@@ -22,11 +21,11 @@ function drawChampions(champions) {
   for (let i = 0; i < champions.length; i++) {
     const champion = champions[i];
     template += `
-    <p>${champion.id}</p>
-    <p>${champion.name}</p>
     <img src="${champion.imgUrl}" alt="champion photo">
-    <p>${champion.maxHp}</p>
-    <p>${champion.currentHp}</p>
+    <p>${champion.name}</p>
+    <p>${champion.race}</p>
+    <p>${champion.class}</p>
+    <p>${champion.hp}</p>
     `
   }
   document.getElementById('champions').innerHTML = template
