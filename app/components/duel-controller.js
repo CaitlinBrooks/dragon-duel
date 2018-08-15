@@ -1,6 +1,8 @@
-// import DuelService from "./duel-service.js"
+import DuelService from "./duel-service.js"
 
-export default class DuelService {
+let ds = new DuelService
+
+export default class DuelController {
   constructor() {
 
   }

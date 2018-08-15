@@ -1,10 +1,10 @@
-// import DuelController from "./app/components/duel-controller.js"
+import DuelController from "./app/components/duel-controller.js"
 
 
 class App {
   constructor() {
     this.controllers = {
-      // duel: new DuelController
+      duel: new DuelController
     }
   }
 }
