@@ -60,4 +60,8 @@ export default class DuelService {
   //       this.getChampion(draw)
   //     })
   // }
+
+  createGame(gameObj) {
+    duelApi.post('game', gameObj)
+  }
 }

@@ -31,10 +31,12 @@ function drawChampions(champions) {
   document.getElementById('champions').innerHTML = template
 }
 
+//make a place for the new game object. Two IDs. 
 
 export default class DuelController {
   constructor() {
     duelService.getDragons(drawDragons)
     duelService.getChampions(drawChampions)
   }
+  //make a set method that would set new game object IDs. Play button can be hard coded. 
 }
